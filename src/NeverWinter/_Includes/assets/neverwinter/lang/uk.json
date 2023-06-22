@@ -1,0 +1,17 @@
+{
+  "ModTitle": "NeverWinter",
+  "ModDescription": "Дозволяє докладне керування температурою та сезонами на сервері.",
+
+  "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "Дозволяє докладне керування температурою та сезонами на сервері.",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "Забезпечує, що температура на сервері ніколи не опускатиметься нижче цього обмеження.",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "Мінімальна температура: {0}°C",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "Забезпечує, що температура на сервері ніколи не перевищуватиме це обмеження.",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "Максимальна температура: {0}°C",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "Примусово встановлює сезон: весна, літо, осінь або зима, протягом всього року.",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "Сезон: {0}",
+  "Features.NeverWinter.ServerCommand.OnReset.Description": "Скидає налаштування моду до заводських.",
+  "Features.NeverWinter.ServerCommand.OnReset.Feedback": "Налаштування NeverWinter скинуті.",
+  "Features.NeverWinter.ServerCommand.MinimumTemperature": "Мінімальна температура",
+  "Features.NeverWinter.ServerCommand.MaximumTemperature": "Максимальна температура",
+  "Features.NeverWinter.ServerCommand.Season": "Сезон"
+}

@@ -1,0 +1,17 @@
+{
+  "ModTitle": "NeverWinter",
+  "ModDescription": "Permesas precizan stierrigon de la temperaturoj kaj sezonoj sur la servilo.",
+
+  "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "Permesas precizan stierrigon de la temperaturoj kaj sezonoj sur la servilo.",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "Certigu, ke la temperaturo de la servilo neniam malsupreniĝos sub tiu limo.",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "Minimuma Temperaturo: {0}°C",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "Certigu, ke la temperaturo de la servilo neniam supreniĝos super tiu limo.",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "Maksimuma Temperaturo: {0}°C",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "Devigu la sezonon esti printempo, somero, aŭtuno, aŭ vintro dum la tuta jaro.",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "Sezono: {0}",
+  "Features.NeverWinter.ServerCommand.OnReset.Description": "Rekomencigi la modulon al la fabrikecaj agordoj.",
+  "Features.NeverWinter.ServerCommand.OnReset.Feedback": "NeverWinter agordoj rekomencigitaj.",
+  "Features.NeverWinter.ServerCommand.MinimumTemperature": "Minimuma Temperaturo",
+  "Features.NeverWinter.ServerCommand.MaximumTemperature": "Maksimuma Temperaturo",
+  "Features.NeverWinter.ServerCommand.Season": "Sezono"
+}

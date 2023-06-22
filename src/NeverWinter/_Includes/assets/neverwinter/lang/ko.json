@@ -1,0 +1,17 @@
+{
+  "ModTitle": "NeverWinter",
+  "ModDescription": "서버의 온도와 계절을 세밀하게 제어할 수 있습니다.",
+
+  "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "서버의 온도와 계절을 세밀하게 제어할 수 있습니다.",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "서버의 온도가 이 한계 아래로 내려가지 않도록 합니다.",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "최저 온도: {0}°C",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "서버의 온도가 이 한계를 넘지 않도록 합니다.",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "최고 온도: {0}°C",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "계절을 봄, 여름, 가을, 겨울 중 하나로 강제 설정합니다.",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "계절: {0}",
+  "Features.NeverWinter.ServerCommand.OnReset.Description": "모드를 공장 설정으로 초기화합니다.",
+  "Features.NeverWinter.ServerCommand.OnReset.Feedback": "NeverWinter 설정 초기화됨.",
+  "Features.NeverWinter.ServerCommand.MinimumTemperature": "최저 온도",
+  "Features.NeverWinter.ServerCommand.MaximumTemperature": "최고 온도",
+  "Features.NeverWinter.ServerCommand.Season": "계절"
+}

@@ -1,0 +1,17 @@
+{
+  "ModTitle": "NeverWinter",
+  "ModDescription": "Umožňuje presné nastavenie teplôt a ročných období na serveri.",
+
+  "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "Umožňuje presné nastavenie teplôt a ročných období na serveri.",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "Zabezpečuje, aby teplota na serveri nikdy nepoklesla pod túto hranicu.",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "Minimálna teplota: {0}°C",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "Zabezpečuje, aby teplota na serveri nikdy neprekročila túto hranicu.",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "Maximálna teplota: {0}°C",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "Vynútiť ročné obdobie jarné, letné, jesenné alebo zimné po celý rok.",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "Ročné obdobie: {0}",
+  "Features.NeverWinter.ServerCommand.OnReset.Description": "Obnoviť mod na továrenské nastavenia.",
+  "Features.NeverWinter.ServerCommand.OnReset.Feedback": "Nastavenia NeverWinter obnovené.",
+  "Features.NeverWinter.ServerCommand.MinimumTemperature": "Minimálna teplota",
+  "Features.NeverWinter.ServerCommand.MaximumTemperature": "Maximálna teplota",
+  "Features.NeverWinter.ServerCommand.Season": "Ročné obdobie"
+}

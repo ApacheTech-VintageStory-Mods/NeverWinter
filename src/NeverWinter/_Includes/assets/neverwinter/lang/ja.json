@@ -1,0 +1,17 @@
+{
+  "ModTitle": "NeverWinter",
+  "ModDescription": "サーバー上で温度と季節を細かく制御することができます。",
+
+  "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "サーバー上で温度と季節を細かく制御することができます。",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "サーバーの温度がこの下限を下回ることがないようにします。",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "最低温度: {0}°C",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "サーバーの温度がこの上限を超えることがないようにします。",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "最高温度: {0}°C",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "一年中の季節を春、夏、秋、冬に強制的に設定します。",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "季節: {0}",
+  "Features.NeverWinter.ServerCommand.OnReset.Description": "モッドを工場出荷時の設定にリセットします。",
+  "Features.NeverWinter.ServerCommand.OnReset.Feedback": "NeverWinterの設定をリセットしました。",
+  "Features.NeverWinter.ServerCommand.MinimumTemperature": "最低温度",
+  "Features.NeverWinter.ServerCommand.MaximumTemperature": "最高温度",
+  "Features.NeverWinter.ServerCommand.Season": "季節"
+}

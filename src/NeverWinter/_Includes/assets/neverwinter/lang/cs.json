@@ -1,0 +1,17 @@
+{
+  "ModTitle": "NeverWinter",
+  "ModDescription": "Umožňuje jemné ovládání teplot a ročních období na serveru.",
+
+  "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "Umožňuje jemné ovládání teplot a ročních období na serveru.",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "Zajišťuje, že teplota serveru nikdy nepůjde pod tuto hranici.",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "Minimální teplota: {0}°C",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "Zajišťuje, že teplota serveru nikdy nepůjde nad tuto hranici.",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "Maximální teplota: {0}°C",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "Vynutí nastavení ročního období na jaro, léto, podzim nebo zimu po celý rok.",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "Roční období: {0}",
+  "Features.NeverWinter.ServerCommand.OnReset.Description": "Obnoví mod na původní nastavení.",
+  "Features.NeverWinter.ServerCommand.OnReset.Feedback": "Nastavení NeverWinter bylo obnoveno.",
+  "Features.NeverWinter.ServerCommand.MinimumTemperature": "Minimální teplota",
+  "Features.NeverWinter.ServerCommand.MaximumTemperature": "Maximální teplota",
+  "Features.NeverWinter.ServerCommand.Season": "Roční období"
+}

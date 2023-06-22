@@ -1,0 +1,17 @@
+{
+  "ModTitle": "NeverWinter",
+  "ModDescription": "Позволяет тонко настраивать температуры и времена года на сервере.",
+
+  "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "Позволяет тонко настраивать температуры и времена года на сервере.",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "Гарантирует, что температура на сервере никогда не опустится ниже этого предела.",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "Минимальная Температура: {0}°C",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "Гарантирует, что температура на сервере никогда не превысит этот предел.",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "Максимальная Температура: {0}°C",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "Принудительно устанавливает сезон: весна, лето, осень или зима круглый год.",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "Время года: {0}",
+  "Features.NeverWinter.ServerCommand.OnReset.Description": "Сбрасывает настройки мода на заводские.",
+  "Features.NeverWinter.ServerCommand.OnReset.Feedback": "Настройки NeverWinter сброшены.",
+  "Features.NeverWinter.ServerCommand.MinimumTemperature": "Минимальная Температура",
+  "Features.NeverWinter.ServerCommand.MaximumTemperature": "Максимальная Температура",
+  "Features.NeverWinter.ServerCommand.Season": "Время года"
+}

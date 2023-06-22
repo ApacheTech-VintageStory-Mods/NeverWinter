@@ -1,0 +1,17 @@
+{
+  "ModTitle": "NeverWinter",
+  "ModDescription": "Consente un controllo dettagliato delle temperature e delle stagioni sul server.",
+
+  "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "Consente un controllo dettagliato delle temperature e delle stagioni sul server.",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "Assicura che la temperatura del server non scenda mai al di sotto di questo limite.",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "Temperatura Minima: {0}°C",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "Assicura che la temperatura del server non superi mai questo limite.",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "Temperatura Massima: {0}°C",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "Forza la stagione a essere primavera, estate, autunno o inverno tutto l'anno.",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "Stagione: {0}",
+  "Features.NeverWinter.ServerCommand.OnReset.Description": "Reimposta le impostazioni del mod ai valori di fabbrica.",
+  "Features.NeverWinter.ServerCommand.OnReset.Feedback": "Impostazioni di NeverWinter ripristinate.",
+  "Features.NeverWinter.ServerCommand.MinimumTemperature": "Temperatura Minima",
+  "Features.NeverWinter.ServerCommand.MaximumTemperature": "Temperatura Massima",
+  "Features.NeverWinter.ServerCommand.Season": "Stagione"
+}

@@ -1,5 +1,5 @@
 <SmartAssemblyProject ProjectId="{0593dcfa-1e1c-4852-b886-d5b76e1ea057}" Version="2.0">
-    <MainAssemblyFileName>.\bin\Debug\net7.0\CampaignCartographer.dll</MainAssemblyFileName>
+    <MainAssemblyFileName>.\bin\Debug\net7.0\NeverWinter.dll</MainAssemblyFileName>
     <FriendlyName>ApacheTech.VintageMods.WaypointExtensions</FriendlyName>
     <CompanyName>ApacheTech Solutions</CompanyName>
     <Configuration Name="Release">
@@ -42,7 +42,7 @@
                 <Embedding Compress="1" Encrypt="1" />
             </Assembly>
             <Assembly AssemblyName="ApacheTech.VintageMods.FluentChatCommands, Culture=neutral, PublicKeyToken=null">
-                <Merging Merge="1">
+                <Merging Merge="0">
                     <Pruning Prune="0">
                         <Exclusion />
                     </Pruning>
@@ -875,6 +875,16 @@
                 <Embedding Compress="1" Encrypt="1" />
             </Assembly>
             <Assembly AssemblyName="CampaignCartographer, Culture=neutral, PublicKeyToken=null">
+                <Merging>
+                    <ResourcesCompression />
+                    <MemberRefsProxy />
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="NeverWinter, Culture=neutral, PublicKeyToken=null">
                 <Merging>
                     <ResourcesCompression />
                     <MemberRefsProxy />

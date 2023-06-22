@@ -1,0 +1,17 @@
+{
+  "ModTitle": "NeverWinter",
+  "ModDescription": "Tillåter detaljerad kontroll över temperaturer och årstider på servern.",
+
+  "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "Tillåter detaljerad kontroll över temperaturer och årstider på servern.",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "Ser till att servertemperaturen aldrig går under denna gräns.",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "Minsta temperatur: {0}°C",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "Ser till att servertemperaturen aldrig går över denna gräns.",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "Högsta temperatur: {0}°C",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "Tvingar årstiden att vara vår, sommar, höst eller vinter året runt.",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "Årstid: {0}",
+  "Features.NeverWinter.ServerCommand.OnReset.Description": "Återställer modden till fabriksinställningarna.",
+  "Features.NeverWinter.ServerCommand.OnReset.Feedback": "NeverWinter-inställningar återställda.",
+  "Features.NeverWinter.ServerCommand.MinimumTemperature": "Minsta temperatur",
+  "Features.NeverWinter.ServerCommand.MaximumTemperature": "Högsta temperatur",
+  "Features.NeverWinter.ServerCommand.Season": "Årstid"
+}

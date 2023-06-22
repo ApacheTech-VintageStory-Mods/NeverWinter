@@ -1,0 +1,17 @@
+{
+  "ModTitle": "NeverWinter",
+  "ModDescription": "允许在服务器上对温度和季节进行细粒度控制。",
+
+  "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "允许在服务器上对温度和季节进行细粒度控制。",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "确保服务器温度永远不会低于此限制。",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "最低温度：{0}°C",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "确保服务器温度永远不会超过此限制。",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "最高温度：{0}°C",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "强制将季节设置为全年春季、夏季、秋季或冬季。",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "季节：{0}",
+  "Features.NeverWinter.ServerCommand.OnReset.Description": "将修改重置为出厂设置。",
+  "Features.NeverWinter.ServerCommand.OnReset.Feedback": "NeverWinter 设置已重置。",
+  "Features.NeverWinter.ServerCommand.MinimumTemperature": "最低温度",
+  "Features.NeverWinter.ServerCommand.MaximumTemperature": "最高温度",
+  "Features.NeverWinter.ServerCommand.Season": "季节"
+}

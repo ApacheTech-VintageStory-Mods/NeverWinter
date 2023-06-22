@@ -4,11 +4,12 @@
 	</PropertyGroup>
 
 	<PropertyGroup Label="Framework Versioning">
-		<TargetFramework>net7.0</TargetFramework>
+		<TargetFrameworks>netstandard2.0;net7.0</TargetFrameworks>
 		<LangVersion>11</LangVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Label="Project Configuration">
+		<RootNamespace>ApacheTech.VintageMods.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
 		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
 		<OutputType>Library</OutputType>
 		<RestoreProjectStyle>PackageReference</RestoreProjectStyle>
@@ -20,7 +21,8 @@
 	<PropertyGroup Label="Environment Variables">
 		<!-- Environment Variable not recongised by Visual Studio Analysers. -->
 		<!-- ReSharper disable once UnknownProperty -->
-		<EnvironmentVariable>$(VINTAGE_STORY)</EnvironmentVariable>
+		<EnvironmentVariable Condition="'$(TargetFramework)' == 'net7.0'">$(VINTAGE_STORY_CORECLR)</EnvironmentVariable>
+		<EnvironmentVariable Condition="'$(TargetFramework)' == 'netstandard2.0'">$(VINTAGE_STORY)</EnvironmentVariable>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -122,11 +124,6 @@
 
 	<ItemGroup>
 	  <None Remove="C:\Users\Apache\.nuget\packages\vintagestory.gantry.services.filesystem\0.5.0\contentFiles\any\netstandard2.0\DependencyInjection\README.md" />
-	</ItemGroup>
-
-
-	<ItemGroup>
-	  <PackageReference Include="ApacheTech.VintageMods.FluentChatCommands" Version="2.2.0" />
 	</ItemGroup>
 
 

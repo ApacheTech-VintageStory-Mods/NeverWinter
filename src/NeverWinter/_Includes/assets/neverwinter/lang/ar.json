@@ -1,0 +1,17 @@
+{
+  "ModTitle": "نيفر ونتر",
+  "ModDescription": "يتيح التحكم الدقيق في درجات الحرارة والفصول الزمنية على الخادم.",
+
+  "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "يتيح التحكم الدقيق في درجات الحرارة والفصول الزمنية على الخادم.",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "يضمن ألا تنخفض درجة حرارة الخادم أبدًا عن هذا الحد.",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "درجة الحرارة الدنيا: {0}°C",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "يضمن ألا ترتفع درجة حرارة الخادم أبدًا فوق هذا الحد.",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "درجة الحرارة القصوى: {0}°C",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "فرض فصل الربيع أو الصيف أو الخريف أو الشتاء على مدار العام.",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "الفصل: {0}",
+  "Features.NeverWinter.ServerCommand.OnReset.Description": "إعادة ضبط التعديل إلى الإعدادات الأصلية.",
+  "Features.NeverWinter.ServerCommand.OnReset.Feedback": "إعدادات نيفر ونتر تمت إعادة الضبط.",
+  "Features.NeverWinter.ServerCommand.MinimumTemperature": "الحد الأدنى للحرارة",
+  "Features.NeverWinter.ServerCommand.MaximumTemperature": "الحد الأقصى للحرارة",
+  "Features.NeverWinter.ServerCommand.Season": "الفصل"
+}

@@ -1,0 +1,17 @@
+{
+  "ModTitle": "NeverWinter",
+  "ModDescription": "Permite controlul detaliat al temperaturilor și anotimpurilor de pe server.",
+
+  "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "Permite controlul detaliat al temperaturilor și anotimpurilor de pe server.",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "Asigură faptul că temperatura de pe server nu va scădea niciodată sub acest limită.",
+  "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "Temperatură Minimă: {0}°C",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "Asigură faptul că temperatura de pe server nu va depăși niciodată această limită.",
+  "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "Temperatură Maximă: {0}°C",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "Forțează anotimpul să fie primăvară, vară, toamnă sau iarnă tot timpul anului.",
+  "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "Anotimp: {0}",
+  "Features.NeverWinter.ServerCommand.OnReset.Description": "Resetează modul la setările din fabrică.",
+  "Features.NeverWinter.ServerCommand.OnReset.Feedback": "Setările NeverWinter au fost resetate.",
+  "Features.NeverWinter.ServerCommand.MinimumTemperature": "Temperatură Minimă",
+  "Features.NeverWinter.ServerCommand.MaximumTemperature": "Temperatură Maximă",
+  "Features.NeverWinter.ServerCommand.Season": "Anotimp"
+}
