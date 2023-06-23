@@ -9,6 +9,8 @@
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "Maksimuma Temperaturo: {0}°C",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "Devigu la sezonon esti printempo, somero, aŭtuno, aŭ vintro dum la tuta jaro.",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "Sezono: {0}",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Description": "Ekskludi sezonon; printempon, someron, aŭtunon aŭ vintrom, el la jara ciklo.",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Feedback": "Ekskludita Sezono: {0}",
   "Features.NeverWinter.ServerCommand.OnReset.Description": "Rekomencigi la modulon al la fabrikecaj agordoj.",
   "Features.NeverWinter.ServerCommand.OnReset.Feedback": "NeverWinter agordoj rekomencigitaj.",
   "Features.NeverWinter.ServerCommand.MinimumTemperature": "Minimuma Temperaturo",

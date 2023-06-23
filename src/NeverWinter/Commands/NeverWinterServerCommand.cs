@@ -1,24 +1,29 @@
-﻿namespace ApacheTech.VintageMods.NeverWinter;
+﻿using ApacheTech.VintageMods.NeverWinter.Settings;
+using Gantry.Core.DependencyInjection.Annotation;
 
-internal sealed class NeverWinterServerCommand
+namespace ApacheTech.VintageMods.NeverWinter.Commands;
+
+[UsedImplicitly]
+internal class NeverWinterServerCommand
 {
     private readonly ICoreServerAPI _sapi;
     private readonly IServerNetworkChannel _serverChannel;
-    private NeverWinterSettings _settings;
+    private readonly NeverWinterSettings _settings;
 
-    public NeverWinterServerCommand(ICoreServerAPI sapi)
+    [SidedConstructor(EnumAppSide.Server)]
+    public NeverWinterServerCommand(ICoreServerAPI sapi, NeverWinterSettings settings, IServerNetworkService serverNetworkService)
     {
-        _settings = ModSettings.World.Feature<NeverWinterSettings>();
-        _serverChannel = IOC.Services
-            .Resolve<IServerNetworkService>()
+
+        _settings = settings;
+        _serverChannel = serverNetworkService
             .DefaultServerChannel
-            .RegisterMessageType<NeverWinterSettings>();
+            .RegisterMessageType<NeverWinterSettingsPacket>();
 
         (_sapi = sapi).Event.PlayerJoin += player =>
-            _serverChannel.SendPacket(_settings, player);
+            _serverChannel.SendPacket(_settings.ToPacket(), player);
     }
 
-    public void Generate()
+    public void GenerateCommand()
     {
         var command = _sapi.ChatCommands
             .Create("nwn")
@@ -28,13 +33,13 @@ internal sealed class NeverWinterServerCommand
 
         command.BeginSubCommand("min")
             .WithDescription(LangEntry("OnMinimumTemperatureChange.Description"))
-            .WithArgs(new FloatArgParser(LangEntry("MinimumTemperature"), -20f, 40f, true))
+            .WithArgs(new FloatArgParser(LangEntry("MinimumTemperature"), -100f, 100f, true))
             .HandleWith(OnMinimumTemperatureChange)
             .EndSubCommand();
 
         command.BeginSubCommand("max")
             .WithDescription(LangEntry("OnMaximumTemperatureChange.Description"))
-            .WithArgs(new FloatArgParser(LangEntry("MaximumTemperature"), -20f, 40f, true))
+            .WithArgs(new FloatArgParser(LangEntry("MaximumTemperature"), -100f, 100f, true))
             .HandleWith(OnMaximumTemperatureChange)
             .EndSubCommand();
 
@@ -42,6 +47,12 @@ internal sealed class NeverWinterServerCommand
             .WithDescription(LangEntry("OnOverrideSeasonChange.Description"))
             .WithArgs(new WordRangeArgParser(LangEntry("Season"), true, "spring", "summer", "autumn", "winter", "auto"))
             .HandleWith(OnOverrideSeasonChange)
+            .EndSubCommand();
+
+        command.BeginSubCommand("exclude")
+            .WithDescription(LangEntry("OnExcludeSeasonChange.Description"))
+            .WithArgs(new WordRangeArgParser(LangEntry("Season"), true, "spring", "summer", "autumn", "winter", "none"))
+            .HandleWith(OnExcludeSeasonChange)
             .EndSubCommand();
 
         command.BeginSubCommand("reset")
@@ -56,36 +67,50 @@ internal sealed class NeverWinterServerCommand
         sb.AppendLine(LangEntry("OnMinimumTemperatureChange.Feedback", _settings.MinTemperature));
         sb.AppendLine(LangEntry("OnMaximumTemperatureChange.Feedback", _settings.MaxTemperature));
         sb.AppendLine(LangEntry("OnOverrideSeasonChange.Feedback", _settings.SeasonOverride.UcFirst()));
+        sb.AppendLine(LangEntry("OnExcludeSeasonChange.Feedback", _settings.ExcludeSeason.UcFirst()));
         return TextCommandResult.Success(sb.ToString());
     }
 
     private TextCommandResult OnMinimumTemperatureChange(TextCommandCallingArgs args)
     {
         _settings.MinTemperature = args[0].To<float>();
-        _serverChannel.BroadcastPacket(_settings);
+        ModSettings.World.Save(_settings);
+        _serverChannel.BroadcastPacket(_settings.ToPacket());
         return TextCommandResult.Success(LangEntry("OnMinimumTemperatureChange.Feedback", _settings.MinTemperature));
     }
 
     private TextCommandResult OnMaximumTemperatureChange(TextCommandCallingArgs args)
     {
         _settings.MaxTemperature = args[0].To<float>();
-        _serverChannel.BroadcastPacket(_settings);
+        ModSettings.World.Save(_settings);
+        _serverChannel.BroadcastPacket(_settings.ToPacket());
         return TextCommandResult.Success(LangEntry("OnMaximumTemperatureChange.Feedback", _settings.MaxTemperature));
     }
 
     private TextCommandResult OnOverrideSeasonChange(TextCommandCallingArgs args)
     {
         _settings.SeasonOverride = args[0].ToString();
+        ModSettings.World.Save(_settings);
         _sapi.World.Calendar.SetSeasonOverride(_settings.SeasonOverride);
+        _serverChannel.BroadcastPacket(_settings.ToPacket());
         return TextCommandResult.Success(LangEntry("OnOverrideSeasonChange.Feedback", _settings.SeasonOverride.UcFirst()));
+    }
+
+    private TextCommandResult OnExcludeSeasonChange(TextCommandCallingArgs args)
+    {
+        _settings.ExcludeSeason = args[0].ToString();
+        ModSettings.World.Save(_settings);
+        _serverChannel.BroadcastPacket(_settings.ToPacket());
+        return TextCommandResult.Success(LangEntry("OnExcludeSeasonChange.Feedback", _settings.ExcludeSeason.UcFirst()));
     }
 
     private TextCommandResult OnReset(TextCommandCallingArgs _)
     {
-        _settings = NeverWinterSettings.Default;
+
+        _settings.Reset();
         ModSettings.World.Save(_settings);
         _sapi.World.Calendar.SetSeasonOverride(null);
-        _serverChannel.BroadcastPacket(_settings);
+        _serverChannel.BroadcastPacket(_settings.ToPacket());
         return TextCommandResult.Success(LangEntry("OnReset.Feedback"));
     }
 

@@ -9,6 +9,8 @@
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "Максимальна температура: {0}°C",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "Примусово встановлює сезон: весна, літо, осінь або зима, протягом всього року.",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "Сезон: {0}",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Description": "Виключіть сезон: весну, літо, осінь або зиму, з річного циклу.",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Feedback": "Виключений сезон: {0}",
   "Features.NeverWinter.ServerCommand.OnReset.Description": "Скидає налаштування моду до заводських.",
   "Features.NeverWinter.ServerCommand.OnReset.Feedback": "Налаштування NeverWinter скинуті.",
   "Features.NeverWinter.ServerCommand.MinimumTemperature": "Мінімальна температура",

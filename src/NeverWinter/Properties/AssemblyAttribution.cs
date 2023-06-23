@@ -8,8 +8,7 @@
     "neverwinter",
     Description = "Allows fine-grained control over temperatures, and seasons.",
     Side = "Universal",
-    Version = "1.0.0",
-    NetworkVersion = "1.0.0",
+    Version = "1.1.0",
     Website = "https://apachetech.co.uk",
     Contributors = new[] { "Rythillian" },
     Authors = new[] { "ApacheTech Solutions" })]

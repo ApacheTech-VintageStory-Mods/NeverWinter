@@ -9,6 +9,8 @@
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "درجة الحرارة القصوى: {0}°C",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "فرض فصل الربيع أو الصيف أو الخريف أو الشتاء على مدار العام.",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "الفصل: {0}",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Description": "استبعاد موسم؛ الربيع، الصيف، الخريف، أو الشتاء، من الدورة السنوية.",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Feedback": "الموسم المستبعد: {0}",
   "Features.NeverWinter.ServerCommand.OnReset.Description": "إعادة ضبط التعديل إلى الإعدادات الأصلية.",
   "Features.NeverWinter.ServerCommand.OnReset.Feedback": "إعدادات نيفر ونتر تمت إعادة الضبط.",
   "Features.NeverWinter.ServerCommand.MinimumTemperature": "الحد الأدنى للحرارة",

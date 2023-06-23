@@ -9,6 +9,8 @@
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "Temperatura Máxima: {0}°C",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "Fuerza que la estación sea primavera, verano, otoño o invierno durante todo el año.",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "Estación: {0}",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Description": "Excluir una estación; primavera, verano, otoño o invierno, del ciclo anual.",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Feedback": "Estación excluida: {0}",
   "Features.NeverWinter.ServerCommand.OnReset.Description": "Restablece la configuración del mod a los ajustes de fábrica.",
   "Features.NeverWinter.ServerCommand.OnReset.Feedback": "Configuración de NeverWinter restablecida.",
   "Features.NeverWinter.ServerCommand.MinimumTemperature": "Temperatura Mínima",

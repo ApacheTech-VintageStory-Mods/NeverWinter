@@ -9,6 +9,8 @@
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "Maximální teplota: {0}°C",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "Vynutí nastavení ročního období na jaro, léto, podzim nebo zimu po celý rok.",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "Roční období: {0}",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Description": "Vyloučit roční období; jaro, léto, podzim nebo zimu, z ročního cyklu.",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Feedback": "Vyloučené roční období: {0}",
   "Features.NeverWinter.ServerCommand.OnReset.Description": "Obnoví mod na původní nastavení.",
   "Features.NeverWinter.ServerCommand.OnReset.Feedback": "Nastavení NeverWinter bylo obnoveno.",
   "Features.NeverWinter.ServerCommand.MinimumTemperature": "Minimální teplota",

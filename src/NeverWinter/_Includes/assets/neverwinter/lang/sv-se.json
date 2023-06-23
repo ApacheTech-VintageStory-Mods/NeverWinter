@@ -9,6 +9,8 @@
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "Högsta temperatur: {0}°C",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "Tvingar årstiden att vara vår, sommar, höst eller vinter året runt.",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "Årstid: {0}",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Description": "Exkludera en säsong; våren, sommaren, hösten eller vintern, från den årliga cykeln.",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Feedback": "Exkluderad säsong: {0}",
   "Features.NeverWinter.ServerCommand.OnReset.Description": "Återställer modden till fabriksinställningarna.",
   "Features.NeverWinter.ServerCommand.OnReset.Feedback": "NeverWinter-inställningar återställda.",
   "Features.NeverWinter.ServerCommand.MinimumTemperature": "Minsta temperatur",

@@ -9,6 +9,8 @@
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "Maximale Temperatuur: {0}°C",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "Forceert het hele jaar door een seizoen, zoals lente, zomer, herfst of winter.",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "Seizoen: {0}",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Description": "Een seizoen uitsluiten; lente, zomer, herfst of winter, uit de jaarlijkse cyclus.",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Feedback": "Uitgesloten seizoen: {0}",
   "Features.NeverWinter.ServerCommand.OnReset.Description": "Reset de modus naar de fabrieksinstellingen.",
   "Features.NeverWinter.ServerCommand.OnReset.Feedback": "NeverWinter-instellingen gereset.",
   "Features.NeverWinter.ServerCommand.MinimumTemperature": "Minimale Temperatuur",

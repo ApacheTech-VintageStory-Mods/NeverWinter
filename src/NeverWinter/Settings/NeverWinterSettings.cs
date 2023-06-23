@@ -1,4 +1,4 @@
-﻿namespace ApacheTech.VintageMods.NeverWinter;
+﻿namespace ApacheTech.VintageMods.NeverWinter.Settings;
 
 [ProtoContract(ImplicitFields = ImplicitFields.AllPublic)]
 public sealed class NeverWinterSettings : FeatureSettings
@@ -6,6 +6,10 @@ public sealed class NeverWinterSettings : FeatureSettings
     internal static readonly NeverWinterSettings Default = new();
 
     public string SeasonOverride { get; set; } = "auto";
-    public float MinTemperature { get; set; } = -20f;
-    public float MaxTemperature { get; set; } = 40f;
+
+    public string ExcludeSeason { get; set; } = "none";
+
+    public float MinTemperature { get; set; } = -100f;
+
+    public float MaxTemperature { get; set; } = 100f;
 }

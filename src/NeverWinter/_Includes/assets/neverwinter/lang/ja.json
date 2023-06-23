@@ -9,6 +9,8 @@
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "最高温度: {0}°C",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "一年中の季節を春、夏、秋、冬に強制的に設定します。",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "季節: {0}",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Description": "年間サイクルから季節（春、夏、秋、冬）を除外します。",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Feedback": "除外された季節：{0}",
   "Features.NeverWinter.ServerCommand.OnReset.Description": "モッドを工場出荷時の設定にリセットします。",
   "Features.NeverWinter.ServerCommand.OnReset.Feedback": "NeverWinterの設定をリセットしました。",
   "Features.NeverWinter.ServerCommand.MinimumTemperature": "最低温度",

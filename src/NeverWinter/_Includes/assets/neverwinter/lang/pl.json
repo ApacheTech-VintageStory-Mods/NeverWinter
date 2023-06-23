@@ -9,6 +9,8 @@
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "Maksymalna temperatura: {0}°C",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "Wymusza utrzymanie jednej pory roku (wiosna, lato, jesień lub zima) przez cały rok.",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "Pora roku: {0}",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Description": "Wyklucz sezon; wiosnę, lato, jesień lub zimę, z cyklu rocznego.",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Feedback": "Wykluczony sezon: {0}",
   "Features.NeverWinter.ServerCommand.OnReset.Description": "Resetuje ustawienia modu do wartości fabrycznych.",
   "Features.NeverWinter.ServerCommand.OnReset.Feedback": "Ustawienia NeverWinter zresetowane.",
   "Features.NeverWinter.ServerCommand.MinimumTemperature": "Minimalna temperatura",

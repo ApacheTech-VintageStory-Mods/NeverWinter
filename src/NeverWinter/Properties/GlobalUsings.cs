@@ -5,6 +5,7 @@ global using ProtoBuf;
 
 global using JetBrains.Annotations;
 
+global using Vintagestory.Common;
 global using Vintagestory.API.Common;
 global using Vintagestory.API.Client;
 global using Vintagestory.API.Server;

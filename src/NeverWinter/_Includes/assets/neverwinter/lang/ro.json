@@ -9,6 +9,8 @@
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "Temperatură Maximă: {0}°C",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "Forțează anotimpul să fie primăvară, vară, toamnă sau iarnă tot timpul anului.",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "Anotimp: {0}",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Description": "Excludeți un sezon; primăvara, vara, toamna sau iarna, din ciclul anual.",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Feedback": "Sezon Exclus: {0}",
   "Features.NeverWinter.ServerCommand.OnReset.Description": "Resetează modul la setările din fabrică.",
   "Features.NeverWinter.ServerCommand.OnReset.Feedback": "Setările NeverWinter au fost resetate.",
   "Features.NeverWinter.ServerCommand.MinimumTemperature": "Temperatură Minimă",

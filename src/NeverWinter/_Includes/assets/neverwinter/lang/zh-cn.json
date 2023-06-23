@@ -9,6 +9,8 @@
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "最高温度：{0}°C",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "强制将季节设置为全年春季、夏季、秋季或冬季。",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "季节：{0}",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Description": "从年度周期中排除一个季节；春季、夏季、秋季或冬季。",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Feedback": "已排除季节：{0}",
   "Features.NeverWinter.ServerCommand.OnReset.Description": "将修改重置为出厂设置。",
   "Features.NeverWinter.ServerCommand.OnReset.Feedback": "NeverWinter 设置已重置。",
   "Features.NeverWinter.ServerCommand.MinimumTemperature": "最低温度",

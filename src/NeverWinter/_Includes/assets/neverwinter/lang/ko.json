@@ -9,6 +9,8 @@
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "최고 온도: {0}°C",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Description": "계절을 봄, 여름, 가을, 겨울 중 하나로 강제 설정합니다.",
   "Features.NeverWinter.ServerCommand.OnOverrideSeasonChange.Feedback": "계절: {0}",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Description": "연간 사이클에서 봄, 여름, 가을 또는 겨울 중 하나의 계절을 제외합니다.",
+  "Features.NeverWinter.ServerCommand.OnExcludeSeasonChange.Feedback": "제외된 계절: {0}",
   "Features.NeverWinter.ServerCommand.OnReset.Description": "모드를 공장 설정으로 초기화합니다.",
   "Features.NeverWinter.ServerCommand.OnReset.Feedback": "NeverWinter 설정 초기화됨.",
   "Features.NeverWinter.ServerCommand.MinimumTemperature": "최저 온도",
