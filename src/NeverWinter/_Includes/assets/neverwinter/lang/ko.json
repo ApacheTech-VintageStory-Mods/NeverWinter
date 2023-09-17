@@ -3,6 +3,10 @@
   "ModDescription": "서버의 온도와 계절을 세밀하게 제어할 수 있습니다.",
 
   "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "서버의 온도와 계절을 세밀하게 제어할 수 있습니다.",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.Description": "아무도 온라인이 아닐 때 일정한 기간 동안 시간이 지날 수 있게 합니다.", 
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationEnabled.Feedback": "서버 휴면: {0}",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationStartMonth.Feedback": "휴면 시작 월: {0}",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationEndMonth.Feedback": "휴면 종료 월: {0}",
   "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "서버의 온도가 이 한계 아래로 내려가지 않도록 합니다.",
   "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "최저 온도: {0}°C",
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "서버의 온도가 이 한계를 넘지 않도록 합니다.",

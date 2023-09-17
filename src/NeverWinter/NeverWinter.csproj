@@ -4,7 +4,7 @@
 	</PropertyGroup>
 
 	<PropertyGroup Label="Framework Versioning">
-		<TargetFrameworks>netstandard2.0;net7.0</TargetFrameworks>
+		<TargetFramework>net7.0</TargetFramework>
 		<LangVersion>11</LangVersion>
 	</PropertyGroup>
 
@@ -21,8 +21,7 @@
 	<PropertyGroup Label="Environment Variables">
 		<!-- Environment Variable not recongised by Visual Studio Analysers. -->
 		<!-- ReSharper disable once UnknownProperty -->
-		<EnvironmentVariable Condition="'$(TargetFramework)' == 'net7.0'">$(VINTAGE_STORY_CORECLR)</EnvironmentVariable>
-		<EnvironmentVariable Condition="'$(TargetFramework)' == 'netstandard2.0'">$(VINTAGE_STORY)</EnvironmentVariable>
+		<EnvironmentVariable>$(VINTAGE_STORY)</EnvironmentVariable>
 	</PropertyGroup>
 
 	<ItemGroup>

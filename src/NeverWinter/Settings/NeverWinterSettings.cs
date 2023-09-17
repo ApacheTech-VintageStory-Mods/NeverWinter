@@ -12,4 +12,10 @@ public sealed class NeverWinterSettings : FeatureSettings
     public float MinTemperature { get; set; } = -100f;
 
     public float MaxTemperature { get; set; } = 100f;
+
+    public string HibernationStartMonth { get; set; } = "November";
+
+    public string HibernationEndMonth { get; set; } = "April";
+
+    public bool HibernationEnabled { get; set; } = true;
 }

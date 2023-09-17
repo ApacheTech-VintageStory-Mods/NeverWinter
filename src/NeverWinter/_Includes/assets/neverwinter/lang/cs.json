@@ -3,6 +3,10 @@
   "ModDescription": "Umožňuje jemné ovládání teplot a ročních období na serveru.",
 
   "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "Umožňuje jemné ovládání teplot a ročních období na serveru.",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.Description": "Povolit uplynutí času, když nikdo není online, v rámci rozsahu měsíců.",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationEnabled.Feedback": "Hibernace serveru: {0}",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationStartMonth.Feedback": "Měsíc zahájení hibernace: {0}",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationEndMonth.Feedback": "Měsíc ukončení hibernace: {0}",
   "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "Zajišťuje, že teplota serveru nikdy nepůjde pod tuto hranici.",
   "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "Minimální teplota: {0}°C",
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "Zajišťuje, že teplota serveru nikdy nepůjde nad tuto hranici.",

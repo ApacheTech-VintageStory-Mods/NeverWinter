@@ -3,6 +3,10 @@
   "ModDescription": "サーバー上で温度と季節を細かく制御することができます。",
 
   "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "サーバー上で温度と季節を細かく制御することができます。",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.Description": "誰もオンラインでないときに時間が経過するのを許可します。月の範囲内で。",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationEnabled.Feedback": "サーバーの休止: {0}",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationStartMonth.Feedback": "休止開始月: {0}",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationEndMonth.Feedback": "休止終了月: {0}",
   "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "サーバーの温度がこの下限を下回ることがないようにします。",
   "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "最低温度: {0}°C",
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "サーバーの温度がこの上限を超えることがないようにします。",

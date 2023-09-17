@@ -3,6 +3,10 @@
   "ModDescription": "يتيح التحكم الدقيق في درجات الحرارة والفصول الزمنية على الخادم.",
 
   "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "يتيح التحكم الدقيق في درجات الحرارة والفصول الزمنية على الخادم.",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.Description": "السماح بمرور الوقت عندما لا يكون أحد متصلاً عبر الإنترنت، في نطاق من الشهور.", 
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationEnabled.Feedback": "تجميد الخادم: {0}",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationStartMonth.Feedback": "شهر بدء التجميد: {0}",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationEndMonth.Feedback": "شهر انتهاء التجميد: {0}",
   "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "يضمن ألا تنخفض درجة حرارة الخادم أبدًا عن هذا الحد.",
   "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "درجة الحرارة الدنيا: {0}°C",
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "يضمن ألا ترتفع درجة حرارة الخادم أبدًا فوق هذا الحد.",

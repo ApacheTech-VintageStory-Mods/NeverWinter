@@ -3,6 +3,10 @@
   "ModDescription": "允许在服务器上对温度和季节进行细粒度控制。",
 
   "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "允许在服务器上对温度和季节进行细粒度控制。",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.Description": "允许在没有人在线时经过一段时间，在几个月的范围内。",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationEnabled.Feedback": "服务器休眠: {0}",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationStartMonth.Feedback": "休眠开始月份: {0}",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationEndMonth.Feedback": "休眠结束月份: {0}",
   "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "确保服务器温度永远不会低于此限制。",
   "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "最低温度：{0}°C",
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "确保服务器温度永远不会超过此限制。",

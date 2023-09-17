@@ -3,6 +3,10 @@
   "ModDescription": "Permite controlul detaliat al temperaturilor și anotimpurilor de pe server.",
 
   "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "Permite controlul detaliat al temperaturilor și anotimpurilor de pe server.",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.Description": "Permite trecerea timpului când nimeni nu este online, într-un interval de luni.",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationEnabled.Feedback": "Hibernare server: {0}",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationStartMonth.Feedback": "Luna de început a hibernării: {0}",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationEndMonth.Feedback": "Luna de sfârșit a hibernării: {0}",
   "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "Asigură faptul că temperatura de pe server nu va scădea niciodată sub acest limită.",
   "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "Temperatură Minimă: {0}°C",
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "Asigură faptul că temperatura de pe server nu va depăși niciodată această limită.",

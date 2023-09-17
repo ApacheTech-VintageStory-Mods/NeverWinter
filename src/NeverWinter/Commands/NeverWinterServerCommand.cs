@@ -1,4 +1,5 @@
-﻿using ApacheTech.VintageMods.NeverWinter.Settings;
+﻿using System;
+using ApacheTech.VintageMods.NeverWinter.Settings;
 using Gantry.Core.DependencyInjection.Annotation;
 
 namespace ApacheTech.VintageMods.NeverWinter.Commands;
@@ -13,7 +14,6 @@ internal class NeverWinterServerCommand
     [SidedConstructor(EnumAppSide.Server)]
     public NeverWinterServerCommand(ICoreServerAPI sapi, NeverWinterSettings settings, IServerNetworkService serverNetworkService)
     {
-
         _settings = settings;
         _serverChannel = serverNetworkService
             .DefaultServerChannel
@@ -30,6 +30,15 @@ internal class NeverWinterServerCommand
             .WithDescription(LangEntry("OnDisplaySettings.Description"))
             .RequiresPrivilege(Privilege.controlserver)
             .HandleWith(OnDisplaySettings);
+
+        command.BeginSubCommand("hibernate")
+            .WithDescription(LangEntry("OnHibernateSettingsChange.Description"))
+            .WithArgs(
+                new BoolArgParser("Enabled", "enabled", true),
+                new WordRangeArgParser(LangEntry("StartMonth"), false, Enum.GetNames(typeof(EnumMonth))),
+                new WordRangeArgParser(LangEntry("EndMonth"), false, Enum.GetNames(typeof(EnumMonth))))
+            .HandleWith(OnHibernateSettingsChange)
+            .EndSubCommand();
 
         command.BeginSubCommand("min")
             .WithDescription(LangEntry("OnMinimumTemperatureChange.Description"))
@@ -64,10 +73,33 @@ internal class NeverWinterServerCommand
     private TextCommandResult OnDisplaySettings(TextCommandCallingArgs args)
     {
         var sb = new StringBuilder();
+        sb.AppendLine(LangEntry("OnHibernateSettingsChange.HibernationEnabled.Feedback", _settings.HibernationEnabled ? "enabled" : "disabled"));
+        if (_settings.HibernationEnabled)
+        {
+            sb.AppendLine(LangEntry("OnHibernateSettingsChange.HibernationStartMonth.Feedback", _settings.HibernationStartMonth));
+            sb.AppendLine(LangEntry("OnHibernateSettingsChange.HibernationEndMonth.Feedback", _settings.HibernationEndMonth));
+        }
         sb.AppendLine(LangEntry("OnMinimumTemperatureChange.Feedback", _settings.MinTemperature));
         sb.AppendLine(LangEntry("OnMaximumTemperatureChange.Feedback", _settings.MaxTemperature));
         sb.AppendLine(LangEntry("OnOverrideSeasonChange.Feedback", _settings.SeasonOverride.UcFirst()));
         sb.AppendLine(LangEntry("OnExcludeSeasonChange.Feedback", _settings.ExcludeSeason.UcFirst()));
+        return TextCommandResult.Success(sb.ToString());
+    }
+
+    private TextCommandResult OnHibernateSettingsChange(TextCommandCallingArgs args)
+    {
+        _settings.HibernationEnabled = args[0].To<bool>();
+        _settings.HibernationStartMonth = args[1].To<string>().IfNullOrWhitespace("November");
+        _settings.HibernationEndMonth = args[2].To<string>().IfNullOrWhitespace("April"); ;
+
+        ModSettings.World.Save(_settings);
+        _serverChannel.BroadcastPacket(_settings.ToPacket());
+
+        var sb = new StringBuilder();
+        sb.AppendLine(LangEntry("OnHibernateSettingsChange.HibernationEnabled.Feedback", _settings.HibernationEnabled ? "Enabled" : "Disabled"));
+        if (!_settings.HibernationEnabled) return TextCommandResult.Success(sb.ToString());
+        sb.AppendLine(LangEntry("OnHibernateSettingsChange.HibernationStartMonth.Feedback", _settings.HibernationStartMonth));
+        sb.AppendLine(LangEntry("OnHibernateSettingsChange.HibernationEndMonth.Feedback", _settings.HibernationEndMonth));
         return TextCommandResult.Success(sb.ToString());
     }
 
@@ -106,7 +138,6 @@ internal class NeverWinterServerCommand
 
     private TextCommandResult OnReset(TextCommandCallingArgs _)
     {
-
         _settings.Reset();
         ModSettings.World.Save(_settings);
         _sapi.World.Calendar.SetSeasonOverride(null);

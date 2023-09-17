@@ -3,6 +3,10 @@
   "ModDescription": "Tillåter detaljerad kontroll över temperaturer och årstider på servern.",
 
   "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "Tillåter detaljerad kontroll över temperaturer och årstider på servern.",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.Description": "Tillåt tid att passera när ingen är online, inom ett intervall av månader.",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationEnabled.Feedback": "Serverhibernering: {0}",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationStartMonth.Feedback": "Startmånad för hibernering: {0}",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationEndMonth.Feedback": "Slutmånad för hibernering: {0}",
   "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "Ser till att servertemperaturen aldrig går under denna gräns.",
   "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "Minsta temperatur: {0}°C",
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "Ser till att servertemperaturen aldrig går över denna gräns.",

@@ -3,6 +3,10 @@
   "ModDescription": "Позволяет тонко настраивать температуры и времена года на сервере.",
 
   "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "Позволяет тонко настраивать температуры и времена года на сервере.",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.Description": "Разрешить прохождение времени, когда никто не в сети, в течение нескольких месяцев.",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationEnabled.Feedback": "Сервер в режиме гибернации: {0}",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationStartMonth.Feedback": "Месяц начала гибернации: {0}",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationEndMonth.Feedback": "Месяц окончания гибернации: {0}",
   "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "Гарантирует, что температура на сервере никогда не опустится ниже этого предела.",
   "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "Минимальная Температура: {0}°C",
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "Гарантирует, что температура на сервере никогда не превысит этот предел.",

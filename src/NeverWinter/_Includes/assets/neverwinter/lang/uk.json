@@ -3,6 +3,10 @@
   "ModDescription": "Дозволяє докладне керування температурою та сезонами на сервері.",
 
   "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "Дозволяє докладне керування температурою та сезонами на сервері.",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.Description": "Дозволити минування часу, коли ніхто не в мережі, в межах кількох місяців.",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationEnabled.Feedback": "Гібернація сервера: {0}",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationStartMonth.Feedback": "Місяць початку гібернації: {0}",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationEndMonth.Feedback": "Місяць закінчення гібернації: {0}",
   "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "Забезпечує, що температура на сервері ніколи не опускатиметься нижче цього обмеження.",
   "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "Мінімальна температура: {0}°C",
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "Забезпечує, що температура на сервері ніколи не перевищуватиме це обмеження.",

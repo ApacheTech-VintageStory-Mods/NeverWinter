@@ -3,7 +3,11 @@
   "ModDescription": "Permesas precizan stierrigon de la temperaturoj kaj sezonoj sur la servilo.",
 
   "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "Permesas precizan stierrigon de la temperaturoj kaj sezonoj sur la servilo.",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.Description": "Permesi pasi tempon kiam neniu estas konektita, en intervalo de monatoj.",
   "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "Certigu, ke la temperaturo de la servilo neniam malsupreniĝos sub tiu limo.",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationEnabled.Feedback": "Servila Hibernado: {0}",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationStartMonth.Feedback": "Monato de Komenco de Hibernado: {0}",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationEndMonth.Feedback": "Monato de Fino de Hibernado: {0}",
   "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "Minimuma Temperaturo: {0}°C",
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "Certigu, ke la temperaturo de la servilo neniam supreniĝos super tiu limo.",
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Feedback": "Maksimuma Temperaturo: {0}°C",

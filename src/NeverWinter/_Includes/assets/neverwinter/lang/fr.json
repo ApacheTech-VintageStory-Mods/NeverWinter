@@ -3,6 +3,10 @@
   "ModDescription": "Permet un contrôle précis des températures et des saisons sur le serveur.",
 
   "Features.NeverWinter.ServerCommand.OnDisplaySettings.Description": "Permet un contrôle précis des températures et des saisons sur le serveur.",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.Description": "Permettre au temps de s'écouler lorsque personne n'est en ligne, dans une plage de mois.",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationEnabled.Feedback": "Hibernation du serveur : {0}",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationStartMonth.Feedback": "Mois de début de l'hibernation : {0}",
+  "Features.NeverWinter.ServerCommand.OnHibernateSettingsChange.HibernationEndMonth.Feedback": "Mois de fin de l'hibernation : {0}",
   "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Description": "Veille à ce que la température du serveur ne descende jamais en dessous de cette limite.",
   "Features.NeverWinter.ServerCommand.OnMinimumTemperatureChange.Feedback": "Température Minimum : {0}°C",
   "Features.NeverWinter.ServerCommand.OnMaximumTemperatureChange.Description": "Veille à ce que la température du serveur ne dépasse jamais cette limite.",
