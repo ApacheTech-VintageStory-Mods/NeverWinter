@@ -6,6 +6,7 @@ namespace ApacheTech.VintageMods.NeverWinter.Patches;
 
 [UsedImplicitly(ImplicitUseTargetFlags.WithMembers)]
 [HarmonySidedPatch(EnumAppSide.Universal)]
+[SettingsConsumer(EnumAppSide.Universal)]
 internal sealed class NeverWinterUniversalPatches : WorldSettingsConsumer<NeverWinterSettings>
 {
     /// <summary>

@@ -89,10 +89,6 @@
 			<HintPath>$(EnvironmentVariable)\Lib\Newtonsoft.Json.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
-		<Reference Include="OpenTK">
-			<HintPath>$(EnvironmentVariable)\Lib\OpenTK.dll</HintPath>
-			<Private>false</Private>
-		</Reference>
 		<Reference Include="protobuf-net">
 			<HintPath>$(EnvironmentVariable)\Lib\protobuf-net.dll</HintPath>
 			<Private>false</Private>
@@ -114,11 +110,12 @@
 		</PackageReference>
 	</ItemGroup>
 
-	<ItemGroup Label="Gantry MDK">
-		<PackageReference Include="VintageStory.Gantry.Core" Version="0.5.3" />
-		<PackageReference Include="VintageStory.Gantry.Services.FileSystem" Version="0.5.0" />
-		<PackageReference Include="VintageStory.Gantry.Services.HarmonyPatches" Version="0.5.0" />
-		<PackageReference Include="VintageStory.Gantry.Services.Network" Version="0.5.0" />
+	<ItemGroup Label="Gantry MDK" Condition="'$(Configuration)|$(Platform)'!='Debug|AnyCPU'">
+		<PackageReference Include="VintageStory.Gantry" Version="0.6.3" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<ProjectReference Include="..\..\..\..\..\Gantry\src\Gantry\Gantry.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -131,6 +128,7 @@
 	<ItemGroup>
 	  <None Remove="C:\Users\Apache\.nuget\packages\vintagestory.gantry.services.filesystem\0.5.0\contentFiles\any\netstandard2.0\DependencyInjection\README.md" />
 	</ItemGroup>
+
 
 
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
