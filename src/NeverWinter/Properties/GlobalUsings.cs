@@ -19,18 +19,18 @@ global using ApacheTech.Common.Extensions.System;
 
 global using Gantry.Core;
 global using Gantry.Core.ModSystems;
-global using Gantry.Core.DependencyInjection;
-global using Gantry.Core.DependencyInjection.Registration;
+global using Gantry.Core.Hosting;
+global using Gantry.Core.Hosting.Registration;
 
 global using Gantry.Services.FileSystem.Configuration.Consumers;
 global using Gantry.Services.FileSystem.Configuration.Abstractions;
 global using Gantry.Services.FileSystem.Configuration;
-global using Gantry.Services.FileSystem.DependencyInjection;
+global using Gantry.Services.FileSystem.Hosting;
 
 global using Gantry.Services.HarmonyPatches.Annotations;
-global using Gantry.Services.HarmonyPatches.DependencyInjection;
+global using Gantry.Services.HarmonyPatches.Hosting;
 
 global using Gantry.Services.Network;
-global using Gantry.Services.Network.DependencyInjection;
+global using Gantry.Services.Network.Hosting;
 
 global using ApacheTech.VintageMods.NeverWinter.Extensions;

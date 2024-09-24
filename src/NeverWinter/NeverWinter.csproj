@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<Version>1.1.0.0</Version>
+		<Version>1.5.3.0</Version>
 	</PropertyGroup>
 
 	<PropertyGroup Label="Framework Versioning">
 		<TargetFramework>net7.0</TargetFramework>
-		<LangVersion>11</LangVersion>
+		<LangVersion>12</LangVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Label="Project Configuration">
@@ -77,44 +77,20 @@
 			<HintPath>$(EnvironmentVariable)\Lib\0Harmony.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
-		<Reference Include="AnimatedGif">
-			<HintPath>$(EnvironmentVariable)\Lib\AnimatedGif.dll</HintPath>
-			<Private>false</Private>
-		</Reference>
-		<Reference Include="cairo-sharp">
-			<HintPath>$(EnvironmentVariable)\Lib\cairo-sharp.dll</HintPath>
-			<Private>false</Private>
-		</Reference>
-		<Reference Include="Newtonsoft.Json">
-			<HintPath>$(EnvironmentVariable)\Lib\Newtonsoft.Json.dll</HintPath>
-			<Private>false</Private>
-		</Reference>
 		<Reference Include="protobuf-net">
 			<HintPath>$(EnvironmentVariable)\Lib\protobuf-net.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
-		<Reference Include="System.Data.SQLite">
-			<HintPath>$(EnvironmentVariable)\Lib\System.Data.SQLite.dll</HintPath>
-			<Private>false</Private>
-		</Reference>
-		<Reference Include="Tavis.JsonPatch">
-			<HintPath>$(EnvironmentVariable)\Lib\Tavis.JsonPatch.dll</HintPath>
-			<Private>false</Private>
-		</Reference>
 	</ItemGroup>
 
-	<ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
-		<PackageReference Include="PolySharp" Version="1.13.2">
+	<ItemGroup>
+		<PackageReference Include="PolySharp" Version="1.14.1">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
 	</ItemGroup>
 
-	<ItemGroup Label="Gantry MDK" Condition="'$(Configuration)|$(Platform)'!='Debug|AnyCPU'">
-		<PackageReference Include="VintageStory.Gantry" Version="0.6.3" />
-	</ItemGroup>
-
-	<ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	<ItemGroup>
 		<ProjectReference Include="..\..\..\..\..\Gantry\src\Gantry\Gantry.csproj" />
 	</ItemGroup>
 

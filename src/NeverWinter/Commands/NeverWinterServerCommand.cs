@@ -1,6 +1,6 @@
 ﻿using System;
 using ApacheTech.VintageMods.NeverWinter.Settings;
-using Gantry.Core.DependencyInjection.Annotation;
+using Gantry.Core.Hosting.Annotation;
 
 namespace ApacheTech.VintageMods.NeverWinter.Commands;
 
@@ -90,7 +90,7 @@ internal class NeverWinterServerCommand
     {
         _settings.HibernationEnabled = args[0].To<bool>();
         _settings.HibernationStartMonth = args[1].To<string>().IfNullOrWhitespace("November");
-        _settings.HibernationEndMonth = args[2].To<string>().IfNullOrWhitespace("April"); ;
+        _settings.HibernationEndMonth = args[2].To<string>().IfNullOrWhitespace("April");
 
         ModSettings.World.Save(_settings);
         _serverChannel.BroadcastPacket(_settings.ToPacket());

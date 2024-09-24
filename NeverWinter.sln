@@ -22,6 +22,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientLauncher", "..\..\..\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gantry", "..\..\..\Gantry\src\Gantry\Gantry.csproj", "{474A5139-86B1-4339-957B-C9B6E07A5788}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{54F3B226-4398-4FEC-9E7B-CC305FDD01D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{F5FD35FB-9E2F-42E1-B436-7A348FE17CD7} = {8EE062AD-CAD4-4B30-BFEE-72A748B96AA4}
 		{3F22CAA7-E68D-47FD-BB9A-E463A541FEAB} = {F22F8C23-47E0-4134-A905-207A3E700A9E}
+		{474A5139-86B1-4339-957B-C9B6E07A5788} = {54F3B226-4398-4FEC-9E7B-CC305FDD01D3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {603A1432-7DAA-410C-9259-CBD9DB944EF3}
